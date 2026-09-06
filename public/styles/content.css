@@ -1,0 +1,38 @@
+#home {
+    background-image: url("../imgs/handshake.webp");
+    background-size: cover;       /* Scales the image to fill the container */
+    background-position: center;  /* Centers the image so cropping happens evenly */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+#home p {
+    margin: 0;
+}
+
+.search_box {
+    background-color: #073d9bac;
+    color: white;
+    border-radius: 5px;
+}
+
+#title_holder {
+    font-weight: 700;
+}
+
+#title_holder h1 {
+    font-family: "Inria Serif", serif;
+    font-size: 40pt;
+}
+
+#title_holder h2 {
+    font-style: italic;
+}
+
+#inspire_txt {
+    font-size: 14pt;
+    font-style: italic;
+}
+
+.author_txt {
+    color: rgb(33, 33, 33);
+}
