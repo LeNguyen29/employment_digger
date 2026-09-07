@@ -1,8 +1,14 @@
 import express from "express"
 import ejs from "ejs"
 import axios from "axios";
+import 'dotenv/config';
 
 const SERVER_PORT = 3000;
+const API_KEY = process.env.API_KEY;
+const APP_ID = process.env.APP_ID;
+
+console.log(API_KEY);
+console.log(APP_ID);
 
 var app = express();
 
@@ -26,8 +32,8 @@ app.post("/submit", async (req, res) => {
     try {
         const result = await axios.get(`https://api.adzuna.com/v1/api/jobs/${job_country}/search/1`, {
             params: {
-                app_id: "3b3f62bc",
-                app_key: "88faf6ea39c17d6e714c4ae6f70c2f4d",
+                app_id: APP_ID,
+                app_key: API_KEY,
                 what: job_title,
                 max_days_old: post_age,
                 results_per_page: 30
